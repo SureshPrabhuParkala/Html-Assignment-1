@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="task1.css">
+    <script src="task1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,13 +14,13 @@
         <img class="logo" src="Files/logo.svg"></img>
         <div class="nav-options">
             <ul>
-                <li><a href="#" class="nav-option-link"><img class="search-icon" src="Files/search.svg"></img>FIND YOUR HOME</a></li>
-                <li><a href="#" class="nav-option-link">FLOOR PLANS</a></li>
-                <li><a href="#" class="nav-option-link">NEWS</a></li>
-                <li><a href="#" class="nav-option-link">RESOURCES</a></li>
-                <li><a href="#" class="nav-option-link">ABOUT US</a></li>
-                <li><a href="#" class="nav-option-link">CONTACT US</a></li>
-                <li><button class="contact"><img src="Files/phone-icon.png" alt="Phone-img"> 879-456-HOME(4667)</button></li>
+                <li><a href="#" class="nav-option-link" tabindex="-1"><img class="search-icon" src="Files/search.svg"></img>FIND YOUR HOME</a></li>
+                <li><a href="#" class="nav-option-link" tabindex="-1">FLOOR PLANS</a></li>
+                <li><a href="#" class="nav-option-link" tabindex="-1">NEWS</a></li>
+                <li><a href="#" class="nav-option-link" tabindex="-1">RESOURCES</a></li>
+                <li><a href="#" class="nav-option-link" tabindex="-1">ABOUT US</a></li>
+                <li><a href="#" class="nav-option-link" tabindex="-1">CONTACT US</a></li>
+                <li><button class="contact" tabindex="-1"><img src="Files/phone-icon.png" alt="Phone-img"> 879-456-HOME(4667)</button></li>
             </ul>
         </div>
     </nav>
@@ -40,31 +41,31 @@
         <div class="second-section-text">
             <h1>Building in the<br> Southeast since 2004</h1>
             <p class="second-section-content">As a regional builder, we know the landscape and climate of the Southeast better than anyone. With lush, green mountains and aprawling sandy beaches a short drive away, there is no better place to settle down into your new home.</p>
-            <button class="second-section-button">KNOW MORE</button>
+            <button class="second-section-button" tabindex="-1">KNOW MORE</button>
         </div>
     </div>
 
     <div class="third-section">
         <div class="left-side">
-            <div class="row1">
-                <h5>2018</h5>
-                <p class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt molestiae minima libero</p>
+            <div class="row1" tabindex="1" onkeydown="display('2018', '2018-content')" onclick="display('2018')" onfocus="display('2018', '2018-content')">
+                <h5 id="2018">2018</h5>
+                <p class="lorem" id="2018-content">Lorem 2018, dolor sit amet consectetur adipisicing elit. Deserunt molestiae minima libero</p>
             </div>
 
-            <div class="row2">
-                <h5>WINNER!</h5>
-                <P class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt molestiae minima libero</P>
+            <div class="row2" tabindex="2" onkeydown="display('winner', 'winner-content')" onclick="display('winner', 'winner-content')" onfocus="display('winner', 'winner-content')">
+                <h5 id="winner">WINNER!</h5>
+                <P class="lorem" id="winner-content">Lorem winner, dolor sit amet consectetur adipisicing elit. Deserunt molestiae minima libero</P>
             </div>
 
-            <div class="row3">
-                <h5>GREEN TAG SALE</h5>
-                <P class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt molestiae minima libero</P>
+            <div class="row3" id="row-3" tabindex="3" onkeydown="display('green', 'green-content')" onclick="display('green', 'green-content')" onfocus="display('green', 'green-content')">
+                <h5 id="green">GREEN TAG SALE</h5>
+                <P class="lorem" id="green-content">Lorem green, dolor sit amet consectetur adipisicing elit. Deserunt molestiae minima libero</P>
             </div>
         </div>
 
         <div class="right-side">
-            <h1 class="third-section-title">South Carolina's 2018 Best Home Builder!</h1>
-            <p class="third-section-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt molestiae minima libero dolores accusantium cum repudiandae officia repellat, alias laboriosam, suscipit, enim labore quam ipsa necessitatibus assumenda iste eveniet illo.</p>
+            <h1 class="third-section-title" id="title">South Carolina's 2018 Best Home Builder!</h1>
+            <p class="third-section-subtitle" id="subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt molestiae minima libero dolores accusantium cum repudiandae officia repellat, alias laboriosam, suscipit, enim labore quam ipsa necessitatibus assumenda iste eveniet illo.</p>
         </div>
     </div>
 
@@ -87,7 +88,6 @@
             <img class="fourth-section-img" src="Files/02.jpg">
         </div>
     </div>
-    </body>
 
     <footer>
         <div class="footer">
@@ -98,19 +98,20 @@
 
             <div class="footer-middle">
                 <ul>
-                    <li><a href="#" class="footer-option">Contact Us</a></li>
-                    <li><a href="#" class="footer-option">F.A.Q</a></li>
-                    <li><a href="#" class="footer-option">Legal Terms</a></li>
-                    <li><a href="#" class="footer-option">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-option" tabindex="-1">Contact Us</a></li>
+                    <li><a href="#" class="footer-option" tabindex="-1">F.A.Q</a></li>
+                    <li><a href="#" class="footer-option" tabindex="-1">Legal Terms</a></li>
+                    <li><a href="#" class="footer-option" tabindex="-1">Privacy Policy</a></li>
                 </ul>
             </div>
 
             <div class="footer-right">
                 <p class="follow-us">FOLLOW US</p>
-                <a href="#"><img class="social-icon" src="Files/facebook-icon.svg"></a>
-                <a href="#"><img class="social-icon" src="Files/twitter-icon.svg"></a>
-                <a href="#"><img class="social-icon" src="Files/instagram-icon.svg"></a>
+                <a href="#" tabindex="-1"><img class="social-icon" src="Files/facebook-icon.svg"></a>
+                <a href="#" tabindex="-1"><img class="social-icon" src="Files/twitter-icon.svg"></a>
+                <a href="#" tabindex="-1"><img class="social-icon" src="Files/instagram-icon.svg"></a>
             </div>
         </div>
     </footer>
+    </body>
 </html>
