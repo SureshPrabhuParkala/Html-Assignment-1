@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="task1.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <img class="logo" src="Files/logo.svg"></img>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" class="nav-option-link"><img class="search-icon" src="Files/search.svg"></img>FIND YOUR HOME</a></li>
+            <li><a href="#" class="nav-option-link">FLOOR PLANS</a></li>
+            <li><a href="#" class="nav-option-link">NEWS</a>
+                <ul class="dropdown-content">
+                        <li><a href="#">News-1</a></li>
+                        <li><a href="#">News-2</a></li>
+                        <li><a href="#">News-3</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav-option-link">RESOURCES</a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Resources-1</a></li>
+                    <li><a href="#">Resources-2</a></li>
+                    <li><a href="#">Resources-3</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nav-option-link">ABOUT US</a></li>
+            <li><a href="contactus.html" class="nav-option-link">CONTACT US</a></li>
+        </ul>
+        <div>
+            <button class="contact"><img src="Files/phone-icon.png" alt="Phone-img"> 879-456-HOME(4667)</button>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <h3 class="contact-title">Contact Form</h3>
+        <form action="thankyou.html" class="form">
+            <div class="name">
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required>
+            </div>
+            <div class="email">
+                <input type="email" placeholder="Work Email" required>
+                <input type="text" placeholder="Company">
+            </div>
+            <div class="select">
+                <select name="industry" id="" required>
+                    <option hidden>Industry</option>
+                    <option value="Industry 1">Industry 1</option>
+                    <option value="Industry 1">Industry 2</option>
+                    <option value="Industry 1">Industry 3</option>
+                </select>
+                <select name="function" id="">
+                    <option hidden>Job Function</option>
+                    <option value="Job 1">Job 1</option>
+                    <option value="Job 2">Job 2</option>
+                    <option value="Job 3">Job 3</option>
+                </select>
+            </div>
+            <div class="phone">
+                <input type="tel" placeholder="phone number" maxlength="10">
+                    <select name="country" id="">
+                        <option hidden>Country:</option>
+                        <option value="India">india</option>
+                        <option value="Usa">usa</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Japan">japan</option>
+                        <option value="Srilanka">srilanka</option>
+                    </select>
+            </div>
+            <div class="check">
+                    <input type="checkbox">Accept.
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+</main>
+</body>
+</html>

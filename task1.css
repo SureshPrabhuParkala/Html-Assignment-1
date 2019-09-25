@@ -272,8 +272,6 @@ nav {
     color: #c8122e;
 }
 
-
-
 nav {
     display: inline-flex;
     float: right;
@@ -301,7 +299,6 @@ ul li a:hover {
     padding: 10px;
     position: relative;
     text-decoration: none;
-    transition-duration: 0.5s;
   }
 
   li:hover, li:focus-within {
@@ -335,3 +332,80 @@ ul li a:hover {
   ul li ul li a:focus-within, ul li a:focus-within {
       color: red;
   }
+
+
+  /* contactus  page*/
+
+.container {
+    background: #cacfd4;
+    border: 5px solid #c8122e;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 3%;
+    height: 100%;
+}
+
+.form {
+    margin-left: 20%;
+}
+
+.contact-title {
+    text-align: center;
+}
+
+header::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+    background:transparent;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: 0px 105px 0px 0px;
+    padding-top: 50px;
+}
+
+select {
+    width: 250px;
+    background: transparent;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin:50px 105px 0px 0px;
+}
+
+.check input[type=checkbox]{
+    margin-top: 60px;
+}
+
+.submit-button {
+    background: blueviolet;
+    border: none;
+    color: white;
+    margin-top: 80px;
+    padding: 12px 20px;
+    border-radius: 12px;
+}
+
+select option {
+    background: #cacfd4 ;
+    border: none;
+}
+
+.submit-button:hover {
+    opacity: 0.5;
+}
+
+input:hover::placeholder ,input:focus::placeholder{
+    font-size:12px;
+    position: relative;
+    top: -20px;
+    transition: 1s ease-in;
+    font-weight: bold;
+    font-size: 100%;
+ }
