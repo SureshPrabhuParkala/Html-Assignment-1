@@ -1,16 +1,8 @@
 *{
     font-family: poppins;
+    outline: none;
 }
  
-.nav-options a {
-    text-decoration: none;
-    color: #0a1118;
-}
-
-.nav-options a:hover {
-    color: #c8122e;
-}
-
 li {
     list-style-type: none;
     display: inline;
@@ -26,13 +18,8 @@ li {
     color: #c8122e;
 }
 
-.nav-options {
-    float : right;
-    margin: 0;
-    padding: 0;
-}
-
 .logo {
+    position: absolute;
     padding-left: 90px;
     padding-top: 20px;
 }
@@ -51,7 +38,7 @@ li {
 }
 
 .contact:hover{
-    background: #0a1118;
+    background: #f5b041;
 }
 
 .search-icon {
@@ -284,3 +271,67 @@ nav {
 .footer-option:hover {
     color: #c8122e;
 }
+
+
+
+nav {
+    display: inline-flex;
+    float: right;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+ul li a:hover {
+    color:orange;
+}
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  li {
+    display: block;
+    float: left;
+    padding: 10px;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+
+  li:hover, li:focus-within {
+    color: darkorange;
+    cursor: pointer;
+  }
+
+  ul li ul {
+    background: white;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    margin-top: 1rem;
+    left: 0;
+    padding: 1rem;
+    display: none;
+  }
+
+  ul li:hover  ul, ul li:focus-within  ul, ul li ul:hover, ul li ul:focus {
+     visibility: visible;
+     opacity: 1;
+     display: block;
+  }
+
+  ul li ul li {
+    clear: both;
+    width: 100%;
+    z-index: 1;
+  }
+
+  ul li ul li a:focus-within, ul li a:focus-within {
+      color: red;
+  }
